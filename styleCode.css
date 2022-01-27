@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Cabecera{
+    display: flex;
+    background-color: black;
+    height: 90px;
+    align-content: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+.menu{
+    border: 1px solid black;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: darkblue;
+    box-shadow: 5px darkblue;   
+}
+.menu__boton{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: x-large;
+}
+
+.cuerpo{
+    display: flex;
+    background-image: url(./img/Group-9@2x_1-400x741.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: blue;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height:741px ;
+}
+.texto{
+    background-color: white;
+    height: 550px;
+    width: 60%;
+    margin-left: 45px;
+    margin-top: 90px;
+    box-shadow: 25px 25px 50px #1b1c1b;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.texto__cabecera{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+    font-size: xxx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+.texto__cuerpo{
+    color: black;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    font-size: x-large;
+    overflow: hidden;
+}
+.footer{
+    border: 1px solid black;
+    color: black;
+    background-color: black;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.redes{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 5px;  
+}
+.logos{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 50%;
+}
+.phone{
+    width: 30px;
+    height: 30px;
+}
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 25px 25px 50px #1b1c1b; 
+}  
+input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: black; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 100px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: black; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+button{
+    height: 45px; 
+    padding-left: 8px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: blue; 
+    border-color: blue; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;
+    color: white;   
+    cursor: pointer;
+}
+.aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+}
+.container {
+    width:100%;
+    height: 600px;
+    padding-top: 40px;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+
+}
+.card {
+    width: 30%;
+    height: 100%;
+    padding: auto;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 25px 25px 50px #1b1c1b;
+}
+.card__container {
+    padding: 30px;
+    display: flex;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card__content {
+    width: 100%;
+    height: 95%;
+    border-radius: 30px;
+}
+.card__header {
+    font-size: xx-large;
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: black;
+    border-radius: 20px 20px 0 0 ;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+.card__info{
+    padding-top: 20px;
+    height: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: left;
+    margin: 15px;
+}
+.card__separador{
+    width: 100%;
+    border-top: black 3px solid;
+}
+.info{
+    padding-top: 15px;
+    display: flex;
+    padding-left: 30px;
+    font-size: large;
+}
