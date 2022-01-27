@@ -11,11 +11,8 @@ body{
     display: flex;
     width: 794px;
     height: 1123px;
-    border: 1px solid black;
-    
 }
 .perfil{
-    border: 1px solid #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,8 +26,6 @@ body{
     height: 100%;
 }
 .cuerpo{
-    border:1px solid green;
-    border: 1px solid #000;
     display: flex;
     flex-direction: column;
     align-items: center;
