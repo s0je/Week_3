@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reto Dia3</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Travel Maker</h1>
+    </header>
+    <div class="nav">
+    </div>
+    <article class="descripcion">
+        <div class="text">
+        <h2 class="text__cabecera">¿Quiens somos?</h2>
+        <p class="text__body">
+            <b>Travel Maker</b> es una agencia de viajes con mas de 14 años de trayectoria en 
+            el mercado, caracterizada por el buen servicio y oferta de productos turísticos de 
+            calidad en destinos nacionales e internacionales, trabajando con un equipo de más 
+            de 60 personas comprometido con cumplir los sueños de viaje de nuestros clientes. 
+            Coordinamos todos los servicios de un paquete turístico, como tiquetes aéreos, 
+            alojamiento, alimentación, traslados, tours, asistencias médicas, alquiler de 
+            autos, cruceros. entre otros. Igualmente gestionamos todos los servicios de viajes 
+            corporativos, convenciones, viajes de incentivos y eventos.
+        </p>
+        </div>
+        <img class="mundo" src="./mundo.webp.jpg" alt="">
+    </article>
+    <div class="separador"></div>
+    <h2 class="eslogan">Nuestro destinos más buscados</h2>
+    <main class="cuerpo">
+        <div class="container">
+            <div class="card__container">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__header">Canarias</h3>
+                  <img src="./islas-canarias-fuerteventura.jpg" class="destino" alt="Islas Canarias - Fuerteventura">
+                  <p class="card__info">Ocho islas en el océano Atlántico donde desconectar, alejarte de la rutina y 
+                      regresar con nuevas energías. Descubre su naturaleza volcánica, relájate en playas paradisiacas, 
+                      adéntrate en bosques milenarios, vuela con tu mirada sobre barrancos y acantilados de vértigo, 
+                      refléjate y sumérgete en aguas cristalinas…</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__header">Galicia</h3>
+                  <img src="./galicia.jpg" class="destino" alt="Galicia">
+                  <p class="card__info">Galicia es un gran destino que reune muchos atractivos para todo tipo de 
+                      viajeros: paisajes de costa increíbles rodeados de acantilados, playas paradisíacas, pueblos 
+                      que desprenden magia, ciudades pétreas de gran importancia histórica y una gastronomía para 
+                      chuparse los dedos.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__header">Mallorca</h3>
+                  <img src="./mallorca.jpg" class="destino" alt="Mallorca">
+                  <p class="card__info">Mallorca, con sus más de 300 días de sol al año que la convierten en un destino 
+                      ideal para pasar unas vacaciones en cualquier época del año.. Mallorca es la mayor de las islas 
+                      Baleares y es conocida por sus playas de arena blanca, bahías con calas escondidas, el sol… Sin 
+                      embargo, Mallorca ofrece mucho más y es el lugar perfecto para pasar unas vacaciones diferentes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="form">
+        <div class="form__separador"></div>
+        <div class="contact_form">
+            <div class="formulario">      
+              <h2 class="form__cabecera">Solicita más información</h2>
+                  <form>       
+                        <p>
+                          <label for="nombre">Nombre
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escriba su nombre">
+                        </p>
+                        <p>
+                          <label for="origen">Origen
+                          </label>
+                            <input type="text" name="introducir_origen" id="origen" required="obligatorio" placeholder="Escriba su origen">
+                        </p>
+                        <p>
+                          <label for="destino">Destino
+                          </label>
+                            <input type="text" name="introducir_destino" id="destino" placeholder="Escriba su destino">
+                        </p>
+                        <p>
+                            <label for="nPersonas">Número de personas
+                            </label>
+                            <input type="number" name="introducir_numero" id="nPersonas" placeholder="Indique número de personas">
+                        </p>
+                        <p>
+                            <label for="fecha">Fecha
+                            </label>
+                            <input type="date" name="introducior_fecha" id="fecha" placeholder="Elija una fiecha">
+                        </p>                        
+                        <button onclick="addViajes()" type="reset" name="solicitar_info" id="info"><p>Solicitar información</p></button>
+                        <button type="button" name="filtrar_destino" id="filtrar"><p>Filtrar</p></button>
+                        <p class="aviso">
+                        </p>
+                  </form>
+            </div>  
+        </div>
+        <div class="buscar">
+            
+        </div>
+    </footer>
+</body>
+</html>
