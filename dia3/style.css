@@ -171,6 +171,10 @@ h3{
     padding-left: 30px;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
 } 
 .form__separador{
     background-color: lightgray;
@@ -219,4 +223,14 @@ button{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;;   
     cursor: pointer;
+}
+.buscador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-right: 20px;
+}
+.area{
+    text-align: center;
 }

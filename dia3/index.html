@@ -73,7 +73,7 @@
         <div class="form__separador"></div>
         <div class="contact_form">
             <div class="formulario">      
-              <h2 class="form__cabecera">Solicita más información</h2>
+              <h2>Solicita más información</h2>
                   <form>       
                         <p>
                           <label for="nombre">Nombre
@@ -100,15 +100,21 @@
                             </label>
                             <input type="date" name="introducior_fecha" id="fecha" placeholder="Elija una fiecha">
                         </p>                        
-                        <button onclick="addViajes()" type="reset" name="solicitar_info" id="info"><p>Solicitar información</p></button>
+                        <button onclick="addViajes()" type="submit" name="solicitar_info" id="info"><p>Solicitar información</p></button>
                         <button type="button" name="filtrar_destino" id="filtrar"><p>Filtrar</p></button>
                         <p class="aviso">
                         </p>
                   </form>
             </div>  
-        </div>
-        <div class="buscar">
-            
+            <section class="buscador">
+                <div class="buscar">
+                    <h2> Buscar por destinos</h2>
+                    <p>Encuentra nuestros destinos</p>
+                </div>
+                <div class="contact__form">
+                    <input class="area" onkeyup="filtrar()" type="text" id="buscar" name="buscar">
+                </div>
+            </section>
         </div>
     </footer>
 </body>
