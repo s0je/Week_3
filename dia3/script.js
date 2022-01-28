@@ -1,20 +1,25 @@
-let nombre = document.getElementById("nombre");
-let origen = document.getElementById("origen");
-let destino = document.getElementById("destino");
-let nPersonas = document.getElementById("nSPersonas");
-let fecha = document.getElementById("fecha");
+let nomb = document.getElementById("nombre");
+let origin = document.getElementById("origen");
+let destiny = document.getElementById("destino");
+let nPersons = document.getElementById("nSPersonas");
+let date = document.getElementById("fecha");
 
 let viajes = [];
 
-function addViajes(addNombre,addOrigen,addDestino,addNPersonas, addFecha){
+function addViajes(){
 
     let nuevoViaje = {
-        nombre : addNombre,
-        origen : addOrigen,
-        destino : addDestino,
-        nPersonas : addNPersonas,
-        fecha : addFecha
+        nombre : nomb,
+        origen : origin,
+        destino : destiny,
+        nPersonas : nPersons,
+        fecha : date
     };
     console.log(nuevoViaje);
     viajes.push(nuevoViaje);
+}
+
+function flitrar()
+{
+    console.log("esto funciona");
 }
