@@ -21,14 +21,29 @@ function addViajes(){
 
 function filtro()
 {
-    if(nuevoViaje.destino == "Canarias" || nuevoViaje.destino == "canarias" || nuevoViaje.destino== "Galicia" || nuevoViaje.destino== "galicia" || nuevoViaje.destino== "Mallorca" || nuevoViaje.destino== "mallorca")
+    for(let i =0; i<viajes.length;i++)
     {
-        console.log(nuevoViaje);
-    }else{
-        console.log("No hay destinos mas buscados");
+        if(viajes[i].destino == "Canarias" || viajes[i].destino == "canarias" || viajes[i].destino== "Galicia" || viajes[i].destino== "galicia" || viajes[i].destino== "Mallorca" || viajes[i].destino== "mallorca")
+        {
+            console.log(viajes[i]);
+        }else{
+            console.log("No hay destinos mas buscados");
+        }
     }
 }
-function filtrado(){
-    let filtrado = nuevoViaje.filter(filtro);
-    console.log(filtrado);
+
+function buscar()
+{
+    let temp = document.getElementById("buscar");
+    let tabla = document.getElementById("tabla");
+
+    let filtraArray = viajes.filter(obj ,key)
+    {
+        return obj[key].includes(temp.value);
+    }
+    tabla.innerHTML = "<tr><th>Nombre</th></tr>";
+    for(let id of filtraArray)
+    {
+        tabla.innerHTML += "<tr><td>"+id+"</td></td>";
+    }
 }
