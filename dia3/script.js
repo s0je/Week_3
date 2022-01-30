@@ -9,17 +9,26 @@ let viajes = [];
 function addViajes(){
 
     let nuevoViaje = {
-        nombre : nomb,
-        origen : origin,
-        destino : destiny,
-        nPersonas : nPersons,
-        fecha : date
+        "nombre" : nomb.value,
+        "origen" : origin.value,
+        "destino" : destiny.value,
+        "nPersonas" : nPersons.value,
+        "fecha" : date.value
     };
     console.log(nuevoViaje);
     viajes.push(nuevoViaje);
 }
 
-function flitrar()
+function filtro()
 {
-    console.log("esto funciona");
+    if(nuevoViaje.destino == "Canarias" || nuevoViaje.destino == "canarias" || nuevoViaje.destino== "Galicia" || nuevoViaje.destino== "galicia" || nuevoViaje.destino== "Mallorca" || nuevoViaje.destino== "mallorca")
+    {
+        console.log(nuevoViaje);
+    }else{
+        console.log("No hay destinos mas buscados");
+    }
+}
+function filtrado(){
+    let filtrado = nuevoViaje.filter(filtro);
+    console.log(filtrado);
 }
