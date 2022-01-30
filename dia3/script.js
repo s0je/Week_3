@@ -21,7 +21,6 @@ function addViajes(){
 
 function filtro()
 {
-<<<<<<< HEAD
     for(let i =0; i<viajes.length;i++)
     {
         if(viajes[i].destino == "Canarias" || viajes[i].destino == "canarias" || viajes[i].destino== "Galicia" || viajes[i].destino== "galicia" || viajes[i].destino== "Mallorca" || viajes[i].destino== "mallorca")
@@ -51,21 +50,9 @@ function buscar()
 
     for(let i=0;i<viajes.length;i++)
     {
-        for(let j of viajes[i])
+        for(let j of filtraArray[i])
         {
             tabla.innerHTML += "<tr><td>${j}</td></tr>"
         }
     }
-=======
-    if(nuevoViaje.destino == "Canarias" || nuevoViaje.destino == "canarias" || nuevoViaje.destino== "Galicia" || nuevoViaje.destino== "galicia" || nuevoViaje.destino== "Mallorca" || nuevoViaje.destino== "mallorca")
-    {
-        console.log(nuevoViaje);
-    }else{
-        console.log("No hay destinos mas buscados");
-    }
-}
-function filtrado(){
-    let filtrado = nuevoViaje.filter(filtro);
-    console.log(filtrado);
->>>>>>> main
 }
