@@ -25,15 +25,11 @@ function filtro()
     {
         if(viajes[i].destino == "Canarias" || viajes[i].destino == "canarias" || viajes[i].destino== "Galicia" || viajes[i].destino== "galicia" || viajes[i].destino== "Mallorca" || viajes[i].destino== "mallorca")
         {
-            console.log(viajes);
+            console.log(viajes[i]);
         }else{
             console.log("No hay destinos mas buscados");
         }
     }
-}
-function filtrado(){
-    let filtrado = viajes.filter(filtro);
-    console.log(filtrado);
 }
 
 function buscar()
@@ -45,14 +41,9 @@ function buscar()
     {
         return obj[key].includes(temp.value);
     }
-
-    tabla.innerHTML = "<tr><th>Nombre</th></tr>"
-
-    for(let i=0;i<viajes.length;i++)
+    tabla.innerHTML = "<tr><th>Nombre</th></tr>";
+    for(let id of filtraArray)
     {
-        for(let j of filtraArray[i])
-        {
-            tabla.innerHTML += "<tr><td>${j}</td></tr>"
-        }
+        tabla.innerHTML += "<tr><td>"+id+"</td></td>";
     }
 }
